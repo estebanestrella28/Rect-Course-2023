@@ -12,8 +12,14 @@ section{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: solid 1px;
+  border-radius: 5%;
+  padding: 15px;
+  background-color: rgba(72, 75, 84, 0.645)
 }
 
 section > img{
   max-width: 360px;
 }
+
+

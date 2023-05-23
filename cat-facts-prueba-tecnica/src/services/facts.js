@@ -5,7 +5,7 @@ export const getFact = () => {
     .then(res => res.json())
     .then(data => {
       const { fact } = data
-      console.log(fact)
+      // console.log(fact)
       return fact
     })
 }

@@ -1,5 +1,5 @@
 
-export const getCatImg = (fact) => {
+export const getCatImg = ({ fact }) => {
   const firstThreeWords = fact.split(' ').splice(1, 3).join(' ')
 
   // split separa un string en palabras y devuelve un array
@@ -10,7 +10,7 @@ export const getCatImg = (fact) => {
     .then(res => res.json()) // .json recibe un JSON y devuelde un objeto de JavasScript
     .then(data => {
       const { url } = data
-      console.log(url)
+      // console.log(url)
       return url
     })
 }
